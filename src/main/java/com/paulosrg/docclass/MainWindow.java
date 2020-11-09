@@ -288,7 +288,7 @@ public class MainWindow extends javax.swing.JFrame {
                 insertStmt.setInt(2, propriedadeValorIds.get(valores.getSelectedIndex()));
                 insertStmt.execute();
             }else{
-                PreparedStatement updateStmt = conn.prepareStatement("UPDATE dicionario_propriedade SET palavras = ? WHERE valor_propriedade_id = ?");
+                PreparedStatement updateStmt = conn.prepareStatement("UPDATE dicionario_propriedade SET palavra = ? WHERE valor_propriedade_id = ?");
                 updateStmt.setArray(1, words);
                 updateStmt.setInt(2, propriedadeValorIds.get(valores.getSelectedIndex()));
                 updateStmt.execute();
