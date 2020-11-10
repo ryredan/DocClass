@@ -42,7 +42,7 @@ public class MainWindow extends javax.swing.JFrame {
         String url = "jdbc:postgresql://" + address + "/" + database;
         Properties props = new Properties();
         props.setProperty("user","postgres");
-        props.setProperty("password","lichking357");
+        props.setProperty("password","");
         try {
             this.conn = DriverManager.getConnection(url, props);
         } catch (SQLException ex) {
